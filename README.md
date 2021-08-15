@@ -33,8 +33,24 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Demonstrate your understanding of this week's concepts by answering the following free-form questions. Edit this document to include your answers after each question.
 
 1. In 1-2 sentences, explain what React's `useRouteMatch` hook is used for.
+
+The Route component declares what components will be mounted based on what URL's the user requests. Once you have React Router installed by using npm install react-router-dom, you can import the Route Component and use it within your application.
+<!-- <Route path="/users" component={Users} /> -->
+
+This route will take us to the users component whenever the /users URL is requested within our application. 
+
+The useRouteMatch hook attempts to match the current URL in the same way that a <Route> would. This hook lets you add nested routes to your application such that you can change a single parameter in the URL without having to change the whole thing. This way you could easily have a website.com/about/employee1/employee-details URL and website.com/about/employee2/employee-details URL, with only one specified route in your code.
+
+
 1. How would you explain form validation to someone who has never programmed before?
+
+Form validation is a “technical process where a web-form checks if the information provided by a user is correct.
+
 1. In 1-2 sentences, define end to end testing.
+
+Writing good, quality code isn't possible without tests. It's simply too difficult to catch every error on your own. There are four types of tests JavaScript developers write and the tests work together to help diagnose problems : Static, Unit, Integration and End to End. 
+
+End to end testing looks at the entire user experience. E2E sets focus on UI and mimic how a user might interact with an app, simulating real events like button clicks, scrolls, form submits, and the like. 
 
 ## Instructions
 
